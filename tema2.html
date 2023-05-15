@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portifólio - Matheus Ferrari</title>
+    <script>
+
+        function mostrarConteudo1() {
+            if (document.getElementById("con1").style.display == "none") {
+                document.getElementById("con1").style.display = "block";
+            } else {
+                document.getElementById("con1").style.display = "none";
+            }
+
+            document.getElementById("con2").style.display = "none";
+
+        }
+
+
+        function mostrarConteudo2() {
+            if (document.getElementById("con2").style.display == "none") {
+                document.getElementById("con2").style.display = "block";
+            } else {
+                document.getElementById("con2").style.display = "none";
+            }
+
+            document.getElementById("con1").style.display = "none";
+
+        }
+    </script>
+
+
+
+    <header class="cabecario">
+
+        <p align="center"><b><u>PORTIFÓLIO DE MATEMÁTICA</u></b></p>
+
+        <b><u> PRIMEIRO TRIMESTRE </u>
+            <br><br>Nome:</b> Matheus José Ferrari
+        <br><br> <b>Informática Iㅤ<s><b>---</b></s>ㅤIFRS Erechim </b>
+        <br><br> <b>Data:</b> 10/01/2023
+    </header>
+
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<a href="index.html" class="topo">(Ir para a página inicial)ㅤ</a>
+<p class="principalfacil"><br>
+    <b><em class="descricao">Adição e subtração de números binários:</em><br></b>
+    <br>
+</p>
+
+<p class="principalfacil">Gerais:</p>
+<p>- Existem várias formas de fazer as operações, aqui vou mostrar a que mais tive facilidade durante as aulas;</p>
+<p>- Você pode conferir se o resultado está certo convertento os componentes para decimal e fazendo a conta normalmente;
+</p>
+<p>- É sempre importante prestar atenção na conta, pois com apenas um erro, tudo muda.</p>
+
+
+<br>
+
+<button onclick="mostrarConteudo1()">APERTE AQUI PARA MOSTRAR / ESCONDER - ADIÇÃO</button>
+<div id="con1" style="display:none">
+    <p>Existe uma regra principal na adição: (Nota: se você converter os números, verá que continuam seguindo o sistema
+        decimal também)</p>
+    <p>0 + 0 = 0 = dec(0)</p>
+    <p>1 + 0 = 1 = dec(1)</p>
+    <p>0 + 1 = 1 = dec(1)</p>
+    <p>1 + 1 = 10 = dec(2), resulta em 0, e o 1 vai ir para a próxima casa</p>
+    <p>1 + 1 + 1 = 11 = dec(3), resulta em 1, e o outro 1 vai ir para a próxima casa</p>
+    <br>
+    <p>Uma dica que dou, é igualar os dois números colocando (0) quando um é menor</p>
+
+    <p><br><b>EX: </b><br></p>
+    <p>1010100111 + 0110101111</p>
+    <br>
+    <table class="expli" style="padding:10px;">
+        <tr class="facil">
+            <th></th>
+            <th>1</th>
+            <th>1</th>
+            <th></th>
+            <th>1</th>
+            <th></th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr class="facil">
+            <th>+</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr class="facil">
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+        </tr>
+    </table>
+
+</div>
+<br>
+
+<button onclick="mostrarConteudo2()">APERTE AQUI PARA MOSTRAR / ESCONDER - SUBTRAÇÃO</button>
+<div id="con2" style="display:none">
+    <p>Existe uma regra principal na subtração: (Nota: se você converter os números, verá que continuam seguindo o
+        sistema decimal também)</p>
+    <p>0 - 0 = 0 = dec(0)</p>
+    <p>1 - 0 = 1 = dec(1)</p>
+    <p>1 - 1 = 0 = dec(0)</p>
+    <p>0 - 1 = 1 = dec(-1), assim como no decimal, precisamos pedir emprestado, para ficar 10-1 (2-1) = 1</p>
+    <br>
+    <p>Nota: na subtração, eu gosto de utilizar o 2 (mesmo que não exista 2 no binário) ao emprestar, pois caso
+        contrário, me perco nos 10 e 1</p>
+
+    <p><br><b>EX: </b><br></p>
+    <p>1010111 - 1111</p>
+    <br>
+    <table class="expli" style="padding:10px;">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th class="dificil">0</th>
+            <th class="facil">2</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>1</th>
+            <th>0</th>
+            <th><s>1</s></th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr class="dificil">
+            <th>-</th>
+            <th></th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr class="facil">
+            <th></th>
+            <th></th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+        </tr>
+    </table>
+</div>
+</body>
+
+
+<br><br><a href="index.html" class="topo">(Ir para a página inicial)ㅤ</a>
+
+</html>
